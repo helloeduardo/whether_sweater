@@ -46,13 +46,13 @@ RSpec.describe 'Forecast Endpoint', type: :request do
     expect(current_weather[:feels_like]).to be_a Float
 
     expect(current_weather).to have_key :humidity
-    expect(current_weather[:humidity]).to be_a Integer
+    expect(current_weather[:humidity]).to be_a Numeric
 
     expect(current_weather).to have_key :uvi
-    expect(current_weather[:uvi]).to be_a Integer
+    expect(current_weather[:uvi]).to be_a Numeric
 
     expect(current_weather).to have_key :visibility
-    expect(current_weather[:visibility]).to be_a Integer
+    expect(current_weather[:visibility]).to be_a Numeric
 
     expect(current_weather).to have_key :conditions
     expect(current_weather[:conditions]).to be_a String
@@ -87,6 +87,8 @@ RSpec.describe 'Forecast Endpoint', type: :request do
     expect(day).to have_key :conditions
     expect(day[:conditions]).to be_a String
 
+    expect(day).to have_key :icon
+    expect(day[:icon]).to be_a String
 
     hourly_weather = attributes[:hourly_weather]
 
@@ -103,12 +105,15 @@ RSpec.describe 'Forecast Endpoint', type: :request do
     expect(hour[:temp]).to be_a Float
 
     expect(hour).to have_key :wind_speed
-    expect(hour[:wind_speed]).to be_a Float
+    expect(hour[:wind_speed]).to be_a String
 
     expect(hour).to have_key :wind_direction
     expect(hour[:wind_direction]).to be_a String
 
     expect(hour).to have_key :conditions
     expect(hour[:conditions]).to be_a String
+
+    expect(hour).to have_key :icon
+    expect(hour[:icon]).to be_a String
   end
 end
