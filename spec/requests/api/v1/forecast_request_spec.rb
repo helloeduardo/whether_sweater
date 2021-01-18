@@ -1,6 +1,6 @@
 RSpec.describe 'Forecast Endpoint', type: :request do
   it "can return weather for a city" do
-    get '/api/vi/forecast?location=denver,co'
+    get '/api/v1/forecast?location=denver,co'
 
     expect(response).to be_successful
 
