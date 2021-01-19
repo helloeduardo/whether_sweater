@@ -18,10 +18,10 @@ RSpec.describe 'User Registration Endpoint', type: :request do
     user = JSON.parse(response.body, symbolize_names: true)[:data]
 
     expect(user).to have_key(:id)
-    expect(user[:id]).to be_an Integer
+    expect(user[:id]).to be_a String
 
     expect(user).to have_key(:type)
-    expect(user[:type]).to eq('users')
+    expect(user[:type]).to eq('user')
 
     expect(user).to have_key(:attributes)
     expect(user[:attributes]).to be_a(Hash)
