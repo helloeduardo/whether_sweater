@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 19 Jan 2021 18:52:05 GMT
+      - Tue, 19 Jan 2021 18:52:04 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -35,7 +35,7 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Tue, 19 Jan 2021 18:52:05 GMT
+      - Tue, 19 Jan 2021 18:52:04 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
@@ -43,7 +43,7 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
-      - JSESSIONID=D3614ECEE76D5121D9608E8453D415EC; Path=/; HttpOnly
+      - JSESSIONID=AE06FD5A121810234E83E50768F62F81; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -54,10 +54,10 @@ http_interactions:
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"denver,co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
         County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<GEOCODE
-        API KEY>&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1154916153"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
+        API KEY>&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-2118624178"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
         County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<GEOCODE
-        API KEY>&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=-1355081814"}]}]}'
-  recorded_at: Tue, 19 Jan 2021 18:52:05 GMT
+        API KEY>&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=-759228941"}]}]}'
+  recorded_at: Tue, 19 Jan 2021 18:52:04 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=<WEATHER API KEY>&lat=39.738453&lon=-104.984853&units=imperial
@@ -96,7 +96,7 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"lat":39.7385,"lon":-104.9849,"timezone":"America/Denver","timezone_offset":-25200,"current":{"dt":1611082322,"sunrise":1611065827,"sunset":1611101043,"temp":34.25,"feels_like":27,"pressure":1023,"humidity":27,"dew_point":6.75,"uvi":1.87,"clouds":100,"visibility":10000,"wind_speed":1.99,"wind_deg":183,"wind_gust":4,"weather":[{"id":804,"main":"Clouds","description":"overcast
+      string: '{"lat":39.7385,"lon":-104.9849,"timezone":"America/Denver","timezone_offset":-25200,"current":{"dt":1611082325,"sunrise":1611065827,"sunset":1611101043,"temp":34.25,"feels_like":27,"pressure":1023,"humidity":27,"dew_point":6.75,"uvi":1.87,"clouds":100,"visibility":10000,"wind_speed":1.99,"wind_deg":183,"wind_gust":4,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}]},"hourly":[{"dt":1611079200,"temp":34.25,"feels_like":26.78,"pressure":1023,"humidity":27,"dew_point":6.75,"uvi":1.65,"clouds":100,"visibility":10000,"wind_speed":2.39,"wind_deg":129,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"pop":0},{"dt":1611082800,"temp":33.49,"feels_like":25.61,"pressure":1027,"humidity":50,"dew_point":18.55,"uvi":1.87,"clouds":100,"visibility":10000,"wind_speed":4.63,"wind_deg":166,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"pop":0},{"dt":1611086400,"temp":34.29,"feels_like":26.15,"pressure":1028,"humidity":60,"dew_point":23.02,"uvi":1.67,"clouds":99,"visibility":10000,"wind_speed":5.88,"wind_deg":162,"weather":[{"id":804,"main":"Clouds","description":"overcast

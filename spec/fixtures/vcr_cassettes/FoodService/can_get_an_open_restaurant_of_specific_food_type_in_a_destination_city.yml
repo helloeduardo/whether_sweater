@@ -1,0 +1,172 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=denver,%20co&open_at=1611074191&term=chinese
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<YELP API KEY>"
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4977'
+      X-Zipkin-Id:
+      - a61acd528b64da19
+      Server:
+      - envoy
+      Ratelimit-Resettime:
+      - '2021-01-20T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--uswest2-5b584d59bc-w2ggt; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      X-Proxied:
+      - 10-69-150-247-uswest2bprod
+      X-Extlb:
+      - 10-69-150-247-uswest2bprod
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 19 Jan 2021 18:52:07 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8234-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "r6DwEwkJdbzp3DnwYKY1qA", "alias": "city-wok-denver-3",
+        "name": "City Wok", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/rtOXvYQrUDaLTkTTByeU0g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/city-wok-denver-3?adjust_creative=d934hLmMdiZTXQQcKIZTig&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=d934hLmMdiZTXQQcKIZTig",
+        "review_count": 326, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "rating": 2.0, "coordinates": {"latitude": 39.8586550006182, "longitude":
+        -104.673859479453}, "transactions": [], "price": "$$", "location": {"address1":
+        "8900 Pe\u00f1a Blvd", "address2": "", "address3": "Terminal B", "city": "Denver",
+        "zip_code": "80249", "country": "US", "state": "CO", "display_address": ["8900
+        Pe\u00f1a Blvd", "Terminal B", "Denver, CO 80249"]}, "phone": "+13033426746",
+        "display_phone": "(303) 342-6746", "distance": 28785.62259097057}, {"id":
+        "aoSgZTty1wHVldlMV-hAwg", "alias": "silk-street-restaurant-broomfield-2",
+        "name": "Silk Street Restaurant", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/B_fho1iQryos4Qm0vhJ1vw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/silk-street-restaurant-broomfield-2?adjust_creative=d934hLmMdiZTXQQcKIZTig&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=d934hLmMdiZTXQQcKIZTig",
+        "review_count": 162, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "thai", "title": "Thai"}, {"alias": "noodles", "title": "Noodles"}],
+        "rating": 3.5, "coordinates": {"latitude": 39.9131145723378, "longitude":
+        -105.069585788927}, "transactions": ["pickup", "restaurant_reservation", "delivery"],
+        "price": "$$", "location": {"address1": "6600 W 120th Ave", "address2": "Unit
+        J", "address3": "", "city": "Broomfield", "zip_code": "80020", "country":
+        "US", "state": "CO", "display_address": ["6600 W 120th Ave", "Unit J", "Broomfield,
+        CO 80020"]}, "phone": "+17206689915", "display_phone": "(720) 668-9915", "distance":
+        21492.31583487274}, {"id": "RFACvStukOc70zE8AyD3Iw", "alias": "golden-bowl-noodle-house-broomfield",
+        "name": "Golden Bowl Noodle House", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/x24uNFJO9ErowH_EplcXPQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/golden-bowl-noodle-house-broomfield?adjust_creative=d934hLmMdiZTXQQcKIZTig&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=d934hLmMdiZTXQQcKIZTig",
+        "review_count": 256, "categories": [{"alias": "vietnamese", "title": "Vietnamese"},
+        {"alias": "noodles", "title": "Noodles"}], "rating": 4.5, "coordinates": {"latitude":
+        39.91293, "longitude": -105.06863}, "transactions": ["pickup", "delivery"],
+        "price": "$", "location": {"address1": "6500 120th Ave", "address2": "Ste
+        E", "address3": "", "city": "Broomfield", "zip_code": "80020", "country":
+        "US", "state": "CO", "display_address": ["6500 120th Ave", "Ste E", "Broomfield,
+        CO 80020"]}, "phone": "+17203816398", "display_phone": "(720) 381-6398", "distance":
+        21428.812082728633}, {"id": "LPKFdZGomFwx745W8BlAkA", "alias": "sono-slurps-denver",
+        "name": "S''ono! / Slurps!", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/eJzrbYdtJ5bMN5HOTdqCUg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sono-slurps-denver?adjust_creative=d934hLmMdiZTXQQcKIZTig&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=d934hLmMdiZTXQQcKIZTig",
+        "review_count": 68, "categories": [{"alias": "asianfusion", "title": "Asian
+        Fusion"}, {"alias": "poke", "title": "Poke"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.7463572, "longitude": -105.0072577}, "transactions": ["pickup",
+        "delivery"], "price": "$", "location": {"address1": "900 Auraria Pkwy", "address2":
+        null, "address3": "101-E", "city": "Denver", "zip_code": "80204", "country":
+        "US", "state": "CO", "display_address": ["900 Auraria Pkwy", "101-E", "Denver,
+        CO 80204"]}, "phone": "+13039539147", "display_phone": "(303) 953-9147", "distance":
+        3234.4946347877653}, {"id": "Sf-MtupitmHLB3I8qOlULg", "alias": "pho-95-denver",
+        "name": "Pho 95", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/O5hkZMzIMTdf6P3w2Gw0Yg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pho-95-denver?adjust_creative=d934hLmMdiZTXQQcKIZTig&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=d934hLmMdiZTXQQcKIZTig",
+        "review_count": 1305, "categories": [{"alias": "vietnamese", "title": "Vietnamese"},
+        {"alias": "vegetarian", "title": "Vegetarian"}, {"alias": "soup", "title":
+        "Soup"}], "rating": 4.0, "coordinates": {"latitude": 39.6910552978516, "longitude":
+        -105.025489807129}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "1401 S Federal Blvd", "address2": "", "address3": "", "city":
+        "Denver", "zip_code": "80219", "country": "US", "state": "CO", "display_address":
+        ["1401 S Federal Blvd", "Denver, CO 80219"]}, "phone": "+13039363322", "display_phone":
+        "(303) 936-3322", "distance": 6847.209963662588}, {"id": "5ld5_3a0f8Dgye1hyhOHPQ",
+        "alias": "big-bowl-denver-2", "name": "Big Bowl", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/-kmQRcPIMV6-YY_ZTKSeKw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/big-bowl-denver-2?adjust_creative=d934hLmMdiZTXQQcKIZTig&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=d934hLmMdiZTXQQcKIZTig",
+        "review_count": 134, "categories": [{"alias": "chinese", "title": "Chinese"},
+        {"alias": "thai", "title": "Thai"}], "rating": 2.0, "coordinates": {"latitude":
+        39.8388478159904, "longitude": -104.671815410256}, "transactions": [], "price":
+        "$$", "location": {"address1": "8500 Pe\u00f1a Blvd", "address2": "", "address3":
+        "Denver International Airport, Concourse C", "city": "Denver", "zip_code":
+        "80249", "country": "US", "state": "CO", "display_address": ["8500 Pe\u00f1a
+        Blvd", "Denver International Airport, Concourse C", "Denver, CO 80249"]},
+        "phone": "+13033422000", "display_phone": "(303) 342-2000", "distance": 28314.234865460014},
+        {"id": "XnRQk7fxwcBHjRvE4Hhnqg", "alias": "lucky-express-northglenn", "name":
+        "Lucky Express", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/yL9spadFJmyPyNwxPTvioA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/lucky-express-northglenn?adjust_creative=d934hLmMdiZTXQQcKIZTig&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=d934hLmMdiZTXQQcKIZTig",
+        "review_count": 18, "categories": [{"alias": "sushi", "title": "Sushi Bars"},
+        {"alias": "thai", "title": "Thai"}, {"alias": "asianfusion", "title": "Asian
+        Fusion"}], "rating": 4.0, "coordinates": {"latitude": 39.91322633, "longitude":
+        -104.97677367}, "transactions": ["delivery"], "location": {"address1": "11970
+        Washington St", "address2": null, "address3": "", "city": "Northglenn", "zip_code":
+        "80233", "country": "US", "state": "CO", "display_address": ["11970 Washington
+        St", "Northglenn, CO 80233"]}, "phone": "+17205365220", "display_phone": "(720)
+        536-5220", "distance": 19769.070523596736}, {"id": "EhBuLa_vPrmr7T40FD-2Nw",
+        "alias": "pho-saigon-vietnamese-noodle-soup-and-grill-westminster", "name":
+        "Pho Saigon - Vietnamese Noodle Soup & Grill", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/q5P0GN2cdyhuupWB0pYf5w/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pho-saigon-vietnamese-noodle-soup-and-grill-westminster?adjust_creative=d934hLmMdiZTXQQcKIZTig&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=d934hLmMdiZTXQQcKIZTig",
+        "review_count": 231, "categories": [{"alias": "vietnamese", "title": "Vietnamese"},
+        {"alias": "noodles", "title": "Noodles"}, {"alias": "bubbletea", "title":
+        "Bubble Tea"}], "rating": 4.5, "coordinates": {"latitude": 39.9148728170936,
+        "longitude": -105.008041975147}, "transactions": ["pickup"], "price": "$$",
+        "location": {"address1": "12033 N Pecos St", "address2": null, "address3":
+        "", "city": "westminster", "zip_code": "80234", "country": "US", "state":
+        "CO", "display_address": ["12033 N Pecos St", "westminster, CO 80234"]}, "phone":
+        "+13032529000", "display_phone": "(303) 252-9000", "distance": 20202.151846053654},
+        {"id": "EzJ2UbnRew187nMBDmFdig", "alias": "pho-kim-aurora", "name": "Pho Kim",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/v1Y9EjMZoyUL-lQm_8AHcg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/pho-kim-aurora?adjust_creative=d934hLmMdiZTXQQcKIZTig&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=d934hLmMdiZTXQQcKIZTig",
+        "review_count": 57, "categories": [{"alias": "vietnamese", "title": "Vietnamese"},
+        {"alias": "soup", "title": "Soup"}], "rating": 4.5, "coordinates": {"latitude":
+        39.6750397, "longitude": -104.8456267}, "transactions": ["pickup", "delivery"],
+        "location": {"address1": "12203 E Iliff Ave", "address2": "Unit H", "address3":
+        "", "city": "Aurora", "zip_code": "80014", "country": "US", "state": "CO",
+        "display_address": ["12203 E Iliff Ave", "Unit H", "Aurora, CO 80014"]}, "phone":
+        "+13034818020", "display_phone": "(303) 481-8020", "distance": 12551.913126281066},
+        {"id": "iWU7Ek2sJIkbelaWcFtGkQ", "alias": "panera-bread-aurora-5", "name":
+        "Panera Bread", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/M8QIK-yzeufL_rgVm9M7BA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/panera-bread-aurora-5?adjust_creative=d934hLmMdiZTXQQcKIZTig&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=d934hLmMdiZTXQQcKIZTig",
+        "review_count": 81, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "salad", "title": "Salad"}, {"alias": "soup", "title": "Soup"}],
+        "rating": 3.0, "coordinates": {"latitude": 39.593205, "longitude": -104.8062366},
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
+        "6770 S Cornerstar Way", "address2": "Ste E", "address3": "", "city": "Aurora",
+        "zip_code": "80016", "country": "US", "state": "CO", "display_address": ["6770
+        S Cornerstar Way", "Ste E", "Aurora, CO 80016"]}, "phone": "+13035869999",
+        "display_phone": "(303) 586-9999", "distance": 21154.69080975241}], "total":
+        10, "region": {"center": {"longitude": -104.97024536132812, "latitude": 39.73552421220229}}}'
+  recorded_at: Tue, 19 Jan 2021 18:52:07 GMT
+recorded_with: VCR 6.0.0
