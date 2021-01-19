@@ -4,7 +4,7 @@ class MunchiesFacade
     location = params[:end_location]
     food = params[:food]
 
-    arrival_time = 1611074191 # TODO: Calculate arrival time using mapquest service
+    arrival_time = (Time.now + 18000).to_i # TODO: Calculate arrival time using mapquest service
 
     munchie = {
       destination_city: location,
