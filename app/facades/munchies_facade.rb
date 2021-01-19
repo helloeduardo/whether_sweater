@@ -10,7 +10,7 @@ class MunchiesFacade
       destination_city: location,
       arrival_time: arrival_time,
       weather: ForecastFacade.forecast(location),
-      food: FoodService.food(food, location, arrival_time)
+      food: FoodService.food(food, location, arrival_time)[:businesses].first
     }
 
     Munchie.new(munchie)

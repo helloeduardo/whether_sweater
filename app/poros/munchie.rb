@@ -21,8 +21,8 @@ class Munchie
 
   def restaurant
     {
-      name: @food[:businesses].first[:name],
-      address: @food[:businesses].first[:location][:display_address].join(", ")
+      name: @food[:name],
+      address: @food[:location][:display_address].join(", ")
     }
   end
 end
