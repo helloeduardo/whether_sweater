@@ -82,6 +82,7 @@ VCR.configure do |config|
   config.filter_sensitive_data('<GEOCODE API KEY>') { ENV['GEOCODING_API_KEY'] }
   config.filter_sensitive_data('<WEATHER API KEY>') { ENV['WEATHER_API_KEY'] }
   config.filter_sensitive_data('<IMAGE API KEY>') { ENV['IMAGE_API_KEY'] }
-  config.default_cassette_options = { re_record_interval: 30.days }
+  config.filter_sensitive_data('<YELP API KEY>') { ENV['YELP_API_KEY'] }
+  config.default_cassette_options = { record: :new_episodes, re_record_interval: 30.days }
   config.allow_http_connections_when_no_cassette = true
 end

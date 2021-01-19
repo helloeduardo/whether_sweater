@@ -24,4 +24,19 @@ RSpec.describe GeocodeService, :vcr do
     expect(response[:results].first[:locations].first[:latLng][:lng]).to be_a Float
     expect(response[:results].first[:locations].first[:latLng][:lng]).to eq(-104.984853)
   end
+
+  it 'can get directions for a starting and ending location' do
+    start = 'denver,co'
+    destination = 'pueblo,co'
+
+    response = GeocodeService.directions(start, destination)
+
+    expect(response).to be_a Hash
+
+    expect(response).to have_key(:route)
+    expect(response[:route]).to be_a Hash
+    
+    expect(response[:route]).to have_key(:time)
+    expect(response[:route][:time]).to be_an Integer
+  end
 end
