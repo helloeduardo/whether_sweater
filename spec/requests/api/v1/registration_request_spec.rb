@@ -7,11 +7,11 @@ RSpec.describe 'User Registration Endpoint', type: :request do
     }
 
     headers = {
-      'Content_Type' => 'application/json',
+      'Content-Type' => 'application/json',
       'Accept' => 'application/json'
     }
 
-    post '/api/v1/users', headers: headers, body: JSON.generate(body)
+    post '/api/v1/users', headers: headers, params: body.to_json
 
     expect(response).to be_successful
 
