@@ -81,7 +81,7 @@ VCR.configure do |config|
   config.configure_rspec_metadata!
   config.filter_sensitive_data('<DONT_EXPOSE_MY_DATA_PLEASE>') { ENV['GEOCODING_API_KEY'] }
   config.filter_sensitive_data('<DONT_EXPOSE_MY_DATA_PLEASE>') { ENV['WEATHER_API_KEY'] }
-  config.filter_sensitive_data('<DONT_EXPOSE_MY_DATA_PLEASE>') { ENV['PHOTO_API_KEY'] }
+  config.filter_sensitive_data('<DONT_EXPOSE_MY_DATA_PLEASE>') { ENV['IMAGE_API_KEY'] }
   config.default_cassette_options = { re_record_interval: 30.days }
   config.allow_http_connections_when_no_cassette = true
 end
