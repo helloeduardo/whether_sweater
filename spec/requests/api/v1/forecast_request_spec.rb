@@ -40,10 +40,10 @@ RSpec.describe 'Forecast Endpoint', type: :request do
     expect(current_weather[:sunset]).to be_a String
 
     expect(current_weather).to have_key :temperature
-    expect(current_weather[:temperature]).to be_a Float
+    expect(current_weather[:temperature]).to be_a Numeric
 
     expect(current_weather).to have_key :feels_like
-    expect(current_weather[:feels_like]).to be_a Float
+    expect(current_weather[:feels_like]).to be_a Numeric
 
     expect(current_weather).to have_key :humidity
     expect(current_weather[:humidity]).to be_a Numeric
