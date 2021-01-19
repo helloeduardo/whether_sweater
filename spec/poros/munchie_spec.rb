@@ -4,11 +4,11 @@ RSpec.describe Munchie do
 
     location = 'denver,co'
     food = JSON.parse(response, symbolize_names: true)
-    arrival_time = (Time.now + 18000).to_i
+    total_time = (Time.now + 18000).to_i
 
     data = {
       destination_city: location,
-      arrival_time: arrival_time,
+      total_time: total_time,
       weather: ForecastFacade.forecast(location),
       food: food[:businesses].first
     }
