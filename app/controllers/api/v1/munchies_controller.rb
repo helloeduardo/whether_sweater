@@ -7,6 +7,6 @@ class Api::V1::MunchiesController < ApplicationController
   private
 
   def munchies_params
-    params.permit(:start, :end, :food)
+    params.permit(:start, :end_location, :food)
   end
 end
