@@ -3,13 +3,13 @@ class Munchie
 
   def initialize(data)
     @destination_city = data[:destination_city]
-    @arrival_time = data[:arrival_time]
+    @total_time = data[:total_time]
     @weather = data[:weather]
     @food = data[:food]
   end
 
   def travel_time
-    Time.at(@arrival_time - Time.now.to_i).utc.strftime("%H hours %M min")
+    Time.at(@total_time).utc.strftime("%H hours %M min")
   end
 
   def forecast # TODO: Need to change this to be at arrival time
