@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer -Ey08S2852mEG0pz8UE7gaD8wbVfpO7fHqGc4yQw41zW037V_pLd2W146UAVD5A_1TcK7J3yrlmnBrQFnl3eMSbEFcB-Hz6L4NIktOjDwEUBSbX1td5pLRqJwQMGYHYx
+      - "<YELP API KEY>"
       User-Agent:
       - Faraday v1.3.0
       Accept-Encoding:
@@ -27,31 +27,31 @@ http_interactions:
       Ratelimit-Dailylimit:
       - '5000'
       Ratelimit-Remaining:
-      - '4985'
+      - '4977'
       X-Zipkin-Id:
-      - fa813490f13cfe08
+      - a61acd528b64da19
       Server:
       - envoy
       Ratelimit-Resettime:
       - '2021-01-20T00:00:00+00:00'
       X-Routing-Service:
-      - routing-main--uswest2-5b584d59bc-bsjss; site=public_api_v3
+      - routing-main--uswest2-5b584d59bc-w2ggt; site=public_api_v3
       X-B3-Sampled:
       - '0'
       X-Proxied:
-      - 10-69-124-134-uswest2aprod
+      - 10-69-150-247-uswest2bprod
       X-Extlb:
-      - 10-69-124-134-uswest2aprod
+      - 10-69-150-247-uswest2bprod
       Cache-Control:
       - max-age=0, must-revalidate, no-cache, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 19 Jan 2021 18:15:08 GMT
+      - Tue, 19 Jan 2021 18:52:07 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8255-DEN
+      - cache-den8234-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -78,9 +78,9 @@ http_interactions:
         "review_count": 162, "categories": [{"alias": "chinese", "title": "Chinese"},
         {"alias": "thai", "title": "Thai"}, {"alias": "noodles", "title": "Noodles"}],
         "rating": 3.5, "coordinates": {"latitude": 39.9131145723378, "longitude":
-        -105.069585788927}, "transactions": ["delivery", "restaurant_reservation",
-        "pickup"], "price": "$$", "location": {"address1": "6600 W 120th Ave", "address2":
-        "Unit J", "address3": "", "city": "Broomfield", "zip_code": "80020", "country":
+        -105.069585788927}, "transactions": ["pickup", "restaurant_reservation", "delivery"],
+        "price": "$$", "location": {"address1": "6600 W 120th Ave", "address2": "Unit
+        J", "address3": "", "city": "Broomfield", "zip_code": "80020", "country":
         "US", "state": "CO", "display_address": ["6600 W 120th Ave", "Unit J", "Broomfield,
         CO 80020"]}, "phone": "+17206689915", "display_phone": "(720) 668-9915", "distance":
         21492.31583487274}, {"id": "RFACvStukOc70zE8AyD3Iw", "alias": "golden-bowl-noodle-house-broomfield",
@@ -88,7 +88,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/golden-bowl-noodle-house-broomfield?adjust_creative=d934hLmMdiZTXQQcKIZTig&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=d934hLmMdiZTXQQcKIZTig",
         "review_count": 256, "categories": [{"alias": "vietnamese", "title": "Vietnamese"},
         {"alias": "noodles", "title": "Noodles"}], "rating": 4.5, "coordinates": {"latitude":
-        39.91293, "longitude": -105.06863}, "transactions": ["delivery", "pickup"],
+        39.91293, "longitude": -105.06863}, "transactions": ["pickup", "delivery"],
         "price": "$", "location": {"address1": "6500 120th Ave", "address2": "Ste
         E", "address3": "", "city": "Broomfield", "zip_code": "80020", "country":
         "US", "state": "CO", "display_address": ["6500 120th Ave", "Ste E", "Broomfield,
@@ -151,7 +151,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/pho-kim-aurora?adjust_creative=d934hLmMdiZTXQQcKIZTig&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=d934hLmMdiZTXQQcKIZTig",
         "review_count": 57, "categories": [{"alias": "vietnamese", "title": "Vietnamese"},
         {"alias": "soup", "title": "Soup"}], "rating": 4.5, "coordinates": {"latitude":
-        39.6750397, "longitude": -104.8456267}, "transactions": ["delivery", "pickup"],
+        39.6750397, "longitude": -104.8456267}, "transactions": ["pickup", "delivery"],
         "location": {"address1": "12203 E Iliff Ave", "address2": "Unit H", "address3":
         "", "city": "Aurora", "zip_code": "80014", "country": "US", "state": "CO",
         "display_address": ["12203 E Iliff Ave", "Unit H", "Aurora, CO 80014"]}, "phone":
@@ -162,11 +162,11 @@ http_interactions:
         "review_count": 81, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
         {"alias": "salad", "title": "Salad"}, {"alias": "soup", "title": "Soup"}],
         "rating": 3.0, "coordinates": {"latitude": 39.593205, "longitude": -104.8062366},
-        "transactions": ["delivery", "pickup"], "price": "$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
         "6770 S Cornerstar Way", "address2": "Ste E", "address3": "", "city": "Aurora",
         "zip_code": "80016", "country": "US", "state": "CO", "display_address": ["6770
         S Cornerstar Way", "Ste E", "Aurora, CO 80016"]}, "phone": "+13035869999",
         "display_phone": "(303) 586-9999", "distance": 21154.69080975241}], "total":
         10, "region": {"center": {"longitude": -104.97024536132812, "latitude": 39.73552421220229}}}'
-  recorded_at: Tue, 19 Jan 2021 18:15:08 GMT
+  recorded_at: Tue, 19 Jan 2021 18:52:07 GMT
 recorded_with: VCR 6.0.0
