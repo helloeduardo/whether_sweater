@@ -1,4 +1,4 @@
-RSpec.describe Forecast, type: :model do
+RSpec.describe Forecast do
   it "exists and has attributes" do
     response = File.read('spec/fixtures/poros/weather_sample_response.json')
 
