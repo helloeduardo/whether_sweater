@@ -1,7 +1,7 @@
 class Api::V1::MunchiesController < ApplicationController
   def index
     munchie = MunchiesFacade.munchie(munchies_params)
-    render json: MunchiesSerializer.new(munchie)
+    render json: MunchieSerializer.new(munchie)
   end
 
   private
