@@ -1,6 +1,6 @@
 RSpec.describe 'Munchies Endpoint', type: :request do
   it 'can return food and forecast information for a destination', :vcr do
-    get '/api/v1/munchies?start=denver,co&end=pueblo,co&food=chinese'
+    get '/api/v1/munchies?start=denver,co&end_location=pueblo,co&food=chinese'
 
     expect(response).to be_successful
 
