@@ -18,29 +18,24 @@ RSpec.describe 'Backgrounds Endpoint', type: :request do
 
     attributes = image[:attributes]
 
-    expect(attributes).to have_key(:image)
-    expect(attributes[:image]).to be_a(Hash)
+    expect(attributes).to have_key(:location)
+    expect(attributes[:location]).to be_a(String)
 
-    image = attributes[:image]
+    expect(attributes).to have_key(:image_url)
+    expect(attributes[:image_url]).to be_a(String)
 
-    expect(image).to have_key(:location)
-    expect(image[:location]).to be_a(String)
+    expect(attributes).to have_key(:credit)
+    expect(attributes[:credit]).to be_a(Hash)
 
-    expect(image).to have_key(:image_url)
-    expect(image[:image_url]).to be_a(String)
+    credit = attributes[:credit]
 
-    expect(image).to have_key(:credit)
-    expect(image[:credit]).to be_a(Hash)
+    expect(credit).to have_key(:source)
+    expect(credit[:source]).to be_a(String)
 
-    credit = image[:credit]
+    expect(credit).to have_key(:author)
+    expect(credit[:author]).to be_a(String)
 
-    expect(image).to have_key(:source)
-    expect(image[:source]).to be_a(String)
-
-    expect(image).to have_key(:author)
-    expect(image[:author]).to be_a(String)
-
-    expect(image).to have_key(:logo)
-    expect(image[:logo]).to be_a(String)
+    expect(credit).to have_key(:logo)
+    expect(credit[:logo]).to be_a(String)
   end
 end
