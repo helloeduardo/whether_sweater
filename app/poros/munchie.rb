@@ -9,7 +9,7 @@ class Munchie
   end
 
   def travel_time
-    Time.at(@arrival_time - Time.now).utc.strftime("%H hours %M min")
+    Time.at(@arrival_time - Time.now.to_i).utc.strftime("%H hours %M min")
   end
 
   def forecast # TODO: Need to change this to be at arrival time
