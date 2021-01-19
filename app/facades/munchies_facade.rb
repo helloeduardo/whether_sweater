@@ -4,11 +4,13 @@ class MunchiesFacade
     location = params[:end_location]
     food = params[:food]
 
-    arrival_time = (Time.now + 18000).to_i # TODO: Calculate arrival time using mapquest service
+    directions = GeocodeService.directions(start, location)
+    total_time = directions[:route][:realTime]
+    arrival_time = (Time.now + total_time).to_i
 
     munchie = {
       destination_city: location,
-      arrival_time: arrival_time,
+      total_time: total_time,
       weather: ForecastFacade.forecast(location),
       food: FoodService.food(food, location, arrival_time)[:businesses].first
     }
