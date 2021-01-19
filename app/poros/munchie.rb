@@ -12,7 +12,7 @@ class Munchie
     Time.at(@total_time).utc.strftime("%H hours %M min")
   end
 
-  def forecast # TODO: Need to change this to be at arrival time
+  def forecast
     {
       summary: @weather.current_weather.conditions,
       temperature: @weather.current_weather.temperature
