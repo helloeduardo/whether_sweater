@@ -1,5 +1,5 @@
 RSpec.describe 'Forecast Endpoint', type: :request do
-  it "can return weather for a city" do
+  it "can return weather for a city", :vcr do
     get '/api/v1/forecast?location=denver,co'
 
     expect(response).to be_successful
@@ -10,7 +10,7 @@ RSpec.describe 'Forecast Endpoint', type: :request do
     expect(forecast[:id]).to be_nil
 
     expect(forecast).to have_key(:type)
-    expect(forecast[:id]).to eq('forecast')
+    expect(forecast[:type]).to eq('forecast')
 
     expect(forecast).to have_key(:attributes)
     expect(forecast[:attributes]).to be_a(Hash)
@@ -101,8 +101,8 @@ RSpec.describe 'Forecast Endpoint', type: :request do
     expect(hour).to have_key :time
     expect(hour[:time]).to be_a String
 
-    expect(hour).to have_key :temp
-    expect(hour[:temp]).to be_a Float
+    expect(hour).to have_key :temperature
+    expect(hour[:temperature]).to be_a Float
 
     expect(hour).to have_key :wind_speed
     expect(hour[:wind_speed]).to be_a String
