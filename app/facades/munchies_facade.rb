@@ -5,7 +5,7 @@ class MunchiesFacade
     food = params[:food]
 
     directions = GeocodeService.directions(start, location)
-    total_time = directions[:route][:realTime]
+    total_time = directions[:route][:time]
     arrival_time = (Time.now + total_time).to_i
 
     munchie = {

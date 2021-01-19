@@ -36,7 +36,7 @@ RSpec.describe GeocodeService, :vcr do
     expect(response).to have_key(:route)
     expect(response[:route]).to be_a Hash
     
-    expect(response[:route]).to have_key(:realTime)
-    expect(response[:route][:realTime]).to be_an Integer
+    expect(response[:route]).to have_key(:time)
+    expect(response[:route][:time]).to be_an Integer
   end
 end
