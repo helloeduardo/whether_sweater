@@ -10,7 +10,7 @@ class ForecastFacade
       end,
 
       hourly_weather: weather[:hourly].first(8).map do |hour|
-          HourlyWeather.new(hour)
+        HourlyWeather.new(hour)
       end
     }
 

@@ -6,7 +6,7 @@ class MunchiesFacade
 
     directions = GeocodeService.directions(start, location)
     total_time = directions[:route][:time]
-    arrival_time = (Time.now + total_time).to_i
+    arrival_time = (Time.zone.now + total_time).to_i
 
     munchie = {
       destination_city: location,

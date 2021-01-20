@@ -9,13 +9,13 @@ class RoadTrip
   end
 
   def travel_time
-    return "impossible" if @total_time.nil? || @total_time.zero? || @total_time == 1_000_000
+    return 'impossible' if @total_time.nil? || @total_time.zero? || @total_time == 1_000_000
 
     day = Time.at(@total_time).utc.day
     if day == 1
-      Time.at(@total_time).utc.strftime("%k hours %M min")
+      Time.at(@total_time).utc.strftime('%k hours %M min')
     else
-      "#{day - 1} days " + Time.at(@total_time).utc.strftime("%k hours %M min")
+      "#{day - 1} days " + Time.at(@total_time).utc.strftime('%k hours %M min')
     end
   end
 
