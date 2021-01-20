@@ -3,7 +3,7 @@ class Api::V1::UsersController < ApplicationController
     user = User.new(user_params)
 
     if user.save
-      render json: UserSerializer.new(user)
+      render json: UserSerializer.new(user), status: :created
     else
       render json: user.errors, status: :bad_request
     end
