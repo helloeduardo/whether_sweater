@@ -2,9 +2,9 @@ class Api::V1::RoadTripController < ApplicationController
   def create
     if User.find_by(api_key: trip_params[:api_key])
       road_trip = RoadTripFacade.trip(trip_params)
-      render json: RoadTripSerializer.new(roadtrip)
+      render json: RoadTripSerializer.new(road_trip)
     else
-      render json: { error: 'invalid api_key' }, status: :unauthorized 
+      render json: { error: 'invalid api_key' }, status: :unauthorized
     end
   end
 
