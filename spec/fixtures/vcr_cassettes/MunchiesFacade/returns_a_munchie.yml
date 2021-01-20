@@ -666,4 +666,69 @@ http_interactions:
       string: '{"businesses": [], "total": 0, "region": {"center": {"longitude": -104.5733642578125,
         "latitude": 38.27035217485165}}}'
   recorded_at: Wed, 20 Jan 2021 05:48:37 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?location=pueblo,co&open_at=1611130514&term=chinese
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - "<YELP API KEY>"
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4991'
+      X-Zipkin-Id:
+      - 11061458067d1133
+      Server:
+      - envoy
+      Ratelimit-Resettime:
+      - '2021-01-21T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--uswest2-5b584d59bc-n4dbm; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      X-Proxied:
+      - 10-69-90-30-uswest2aprod
+      X-Extlb:
+      - 10-69-90-30-uswest2aprod
+      Cache-Control:
+      - max-age=0, must-revalidate, no-cache, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Wed, 20 Jan 2021 06:30:53 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8279-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [], "total": 0, "region": {"center": {"longitude": -104.5733642578125,
+        "latitude": 38.27035217485165}}}'
+  recorded_at: Wed, 20 Jan 2021 06:30:53 GMT
 recorded_with: VCR 6.0.0
