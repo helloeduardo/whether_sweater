@@ -9,7 +9,14 @@ class Munchie
   end
 
   def travel_time
-    Time.at(@total_time).utc.strftime("%H hours %M min")
+    return "impossible" if @total_time.nil? || @total_time.zero? || @total_time = 1_000_000
+
+    day = Time.at(@total_time).utc.day
+    if day == 1
+      Time.at(@total_time).utc.strftime("%k hours %M min")
+    else
+      "#{day - 1} days " + Time.at(@total_time).utc.strftime("%k hours %M min")
+    end
   end
 
   def forecast
