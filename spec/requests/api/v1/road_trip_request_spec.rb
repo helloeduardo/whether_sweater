@@ -19,7 +19,6 @@ RSpec.describe 'Road Trip Endpoint', type: :request do
     }
 
     post '/api/v1/road_trip', headers: headers, params: body.to_json
-
     expect(response).to be_successful
 
     trip = JSON.parse(response.body, symbolize_names: true)[:data]
@@ -28,7 +27,7 @@ RSpec.describe 'Road Trip Endpoint', type: :request do
     expect(trip[:id]).to be_nil
 
     expect(trip).to have_key(:type)
-    expect(trip[:type]).to eq('roadtrip')
+    expect(trip[:type]).to eq('road_trip')
 
     expect(trip).to have_key(:attributes)
     expect(trip[:attributes]).to be_a(Hash)
