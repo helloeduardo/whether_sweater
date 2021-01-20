@@ -14,6 +14,7 @@ RSpec.describe 'User Registration Endpoint', type: :request do
     post '/api/v1/users', headers: headers, params: body.to_json
 
     expect(response).to be_successful
+    expect(response.status).to eq(201)
 
     user = JSON.parse(response.body, symbolize_names: true)[:data]
 
