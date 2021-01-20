@@ -36,6 +36,9 @@ RSpec.configure do |config|
   # Add FactoryBot methods
   config.include FactoryBot::Syntax::Methods
 
+  # Add TimeHelpers
+  config.include ActiveSupport::Testing::TimeHelpers
+
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
